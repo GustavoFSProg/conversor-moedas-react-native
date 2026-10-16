@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import Button from './src/components/Button/Button';
 
 export default function App() {
   return (
@@ -17,16 +18,9 @@ export default function App() {
           
           fontSize: 18}}>De:</Text>
         <Text style={{color: "white", fontSize: 18}}>Para:</Text>
+        <Button />
       </View>
 
-      <TouchableOpacity 
-      onPress={() => Alert.alert("Conversão realizada!")}
-      
-      style={{backgroundColor: "#2563eb",
-      color: "white", padding: 10, borderRadius: 5,
-       marginTop: 40}}>
-      <Text style={{color: "white", fontSize: 16}}>Converter</Text>
-      </TouchableOpacity>
     </View>
   );
 }
