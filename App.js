@@ -18,8 +18,9 @@ export default function App() {
           
           fontSize: 18}}>De:</Text>
         <Text style={{color: "white", fontSize: 18}}>Para:</Text>
-        <Button />
       </View>
+        <Button  />
+
 
     </View>
   );
@@ -32,7 +33,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width: "100vw",
     fontSize: 20,
-    backgroundColor: '#0f172a',
+    // backgroundColor: '#0f172a',
+    backgroundColor: 'green',
     gap: 8,
   },
 });
