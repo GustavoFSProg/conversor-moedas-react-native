@@ -6,12 +6,12 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
-      <Text style={{fontSize: 20, color: "white"}}>Conversor de moedas!</Text>
-      <Text style={{fontSize: 16, color: "white"}}>Converta valores em diferentes moedas!</Text>
+      <Text style={{fontSize: 26, color: "white"}}>Conversor de moedas!</Text>
+      <Text style={{fontSize: 14, color: "white"}}>Converta valores em diferentes moedas!</Text>
 
       <View style={{flexDirection: "row", justifyContent: "space-between",
          width: "53%",
-         marginLeft: -100,
+        //  marginLeft: -100,
 
          marginTop: 10}}>
         <Text style={{color: "white",
@@ -19,8 +19,7 @@ export default function App() {
           fontSize: 18}}>De:</Text>
         <Text style={{color: "white", fontSize: 18}}>Para:</Text>
       </View>
-        <Button  />
-
+        <Button variant="primary" title="Converter"/>
 
     </View>
   );
@@ -29,12 +28,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingTop: 70,
     alignItems: 'center',
-    justifyContent: 'center',
+    // justifyContent: 'center',
     width: "100vw",
     fontSize: 20,
-    // backgroundColor: '#0f172a',
-    backgroundColor: 'green',
+    backgroundColor: '#0f172a',
+    // backgroundColor: 'green',
     gap: 8,
   },
 });
