@@ -9,17 +9,18 @@ export default function App() {
       <Text style={{fontSize: 26, color: "white"}}>Conversor de moedas!</Text>
       <Text style={{fontSize: 14, color: "white"}}>Converta valores em diferentes moedas!</Text>
 
-      <View style={{flexDirection: "row", justifyContent: "space-between",
+      <View style={styles.card}>
+        <View style={{flexDirection: "row", justifyContent: "space-between",
          width: "53%",
-        //  marginLeft: -100,
-
-         marginTop: 10}}>
+         marginBottom: 10
+         }}>
         <Text style={{color: "white",
-          
           fontSize: 18}}>De:</Text>
         <Text style={{color: "white", fontSize: 18}}>Para:</Text>
-      </View>
+          </View>
+
         <Button variant="primary" title="Converter"/>
+      </View>
 
     </View>
   );
@@ -37,4 +38,13 @@ const styles = StyleSheet.create({
     // backgroundColor: 'green',
     gap: 8,
   },
+  card: {
+    justifyContent: "center",
+    backgroundColor: "#334155",
+         width: "98%",
+         padding: 22,
+
+         marginTop: 10,
+
+  }
 });
